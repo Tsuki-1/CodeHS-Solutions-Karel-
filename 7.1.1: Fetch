@@ -1,0 +1,27 @@
+//Im nonbinary :3
+function start() {
+    turnLeft();
+    dash();
+    turnRight();
+    move();
+    move();
+    takeBall();
+    turnAround();
+    dStep();
+    turnLeft();
+    dash();
+    turnLeft();
+    putBall();
+}
+
+function dash() {
+    move();
+    for (var i = 0; i < 3; i++) {
+        move();
+    }
+}
+
+function dStep() {
+    move();
+    move();
+}
