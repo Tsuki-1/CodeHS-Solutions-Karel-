@@ -1,0 +1,9 @@
+function start() {
+    if (noBallsPresent()) {
+        turnLeft();
+        turnLeft();
+
+    } else {
+        turnRight();
+    }
+}
