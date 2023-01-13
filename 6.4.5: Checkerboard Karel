@@ -1,0 +1,39 @@
+function start() {
+
+    for (var i = 0; i < 3; i++) {
+        makeaRow();
+        turnLeft();
+        move();
+        turnLeft();
+        makeaRow();
+        turnRight();
+        move();
+        turnRight();
+    }
+    makeaRow();
+    turnLeft();
+    move();
+    turnLeft();
+    makeaRow();
+    goHome();
+}
+
+function makeaRow() {
+    for (var i = 0; i < 3; i++) {
+        paint(Color.black);
+        move();
+        paint(Color.red);
+        move();
+    }
+    paint(Color.black);
+    move();
+    paint(Color.red);
+}
+
+function goHome() {
+    turnLeft();
+    for (var i = 0; i < 7; i++) {
+        move();
+    }
+    turnLeft();
+}
