@@ -1,0 +1,25 @@
+function start() {
+    for (var i = 0; i < 4; i++) {
+        climbStep();
+    }
+
+    for (var i = 0; i < 4; i++) {
+        getABall();
+    }
+
+}
+
+function climbStep() {
+    turnLeft();
+    move();
+    turnRight();
+    move();
+}
+
+function getABall() {
+    move();
+    turnRight();
+    move();
+    takeBall();
+    turnLeft();
+}
