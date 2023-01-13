@@ -1,0 +1,23 @@
+function start() {
+    turnLeft();
+    while (frontIsClear()) {
+        move();
+
+    }
+    while (frontIsBlocked()) {
+        turnRight();
+        move();
+        turnLeft();
+
+    }
+    while (frontIsClear()) {
+        move();
+
+    }
+    turnRight();
+    while (frontIsClear()) {
+        move();
+
+    }
+
+}
