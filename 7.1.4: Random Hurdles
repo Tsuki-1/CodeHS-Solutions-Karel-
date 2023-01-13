@@ -1,0 +1,20 @@
+function start() {
+    // Write your code here
+    for (var a = 0; a < 13; a++) {
+        if (frontIsBlocked()) {
+            jumpHurdle();
+        } else {
+            move();
+        }
+    }
+}
+
+function jumpHurdle() {
+    turnLeft();
+    for (var i = 0; i < 2; i++) {
+        move();
+        turnRight();
+    }
+    move();
+    turnLeft();
+}
