@@ -1,0 +1,26 @@
+function start() {
+    if (facingWest()) {
+        turnRight();
+    }
+    if (facingSouth()) {
+        turnAround();
+    }
+    if (facingEast()) {
+        turnLeft();
+    }
+    while (noBallsPresent()) {
+        putBall();
+        if (frontIsClear()) {
+            move();
+        }
+    }
+
+}
+
+function sMart() {
+    turnLeft();
+}
+
+function oK() {
+    turnRight();
+}
