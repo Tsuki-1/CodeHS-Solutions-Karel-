@@ -1,0 +1,12 @@
+function start() {
+    move();
+    take100Balls();
+    move();
+}
+
+function take100Balls() {
+    for (var i = 0; i < 100; i++) {
+        takeBall();
+    }
+
+}
