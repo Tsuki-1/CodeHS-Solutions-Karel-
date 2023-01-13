@@ -1,0 +1,31 @@
+/*This is the start of my code
+ *This includes making the first tower going back down
+ *And making the last tower
+ *Karel's ending position is he is on top of the second
+ *tower facing east
+ */
+function start() {
+    makeTower();
+    move();
+    turnRight();
+    move();
+    move();
+    move();
+    turnLeft();
+    makeTower();
+}
+/*Here I am teaching Karel how to make a tower
+ *His ending position is standing on top of his first
+ *tower facing east
+ */
+function makeTower() {
+    move();
+    putBall();
+    turnLeft();
+    move();
+    putBall();
+    move();
+    putBall();
+    move();
+    turnRight();
+}
