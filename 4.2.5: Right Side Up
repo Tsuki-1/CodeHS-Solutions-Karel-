@@ -1,0 +1,11 @@
+function start() {
+    if (facingSouth()) {
+        turnLeft();
+
+    } else {
+        turnRight();
+        turnRight();
+
+    }
+
+}
