@@ -1,0 +1,7 @@
+function start() {
+    move();
+    while (ballsPresent()) {
+        takeBall();
+    }
+    move();
+}
