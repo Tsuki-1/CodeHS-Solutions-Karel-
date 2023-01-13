@@ -1,0 +1,18 @@
+function start() {
+    move();
+    move();
+    move();
+    move();
+    move();
+    turnLeft();
+
+    while (frontIsClear()) {
+        if (rightIsBlocked()) {
+            putBall();
+            move();
+        } else {
+            move();
+        }
+    }
+    putBall();
+}
