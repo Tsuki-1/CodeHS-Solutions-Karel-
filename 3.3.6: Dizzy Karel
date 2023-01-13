@@ -1,0 +1,9 @@
+function start() {
+    spin8times();
+}
+
+function spin8times() {
+    for (var i = 0; i < 32; i++) {
+        turnLeft();
+    }
+}
