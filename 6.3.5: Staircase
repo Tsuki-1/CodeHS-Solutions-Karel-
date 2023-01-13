@@ -1,0 +1,25 @@
+function start() {
+    putBall();
+    while (frontIsClear()) {
+        turnLeft();
+        while (ballsPresent()) {
+            move();
+        }
+
+        turnRight();
+        move();
+        createStep();
+    }
+}
+
+function createStep() {
+    turnRight();
+    putBall();
+    while (frontIsClear()) {
+
+
+        move();
+        putBall();
+    }
+    turnLeft();
+}
