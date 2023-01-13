@@ -1,0 +1,41 @@
+function start() {
+    // move
+    move();
+    buildTower();
+    move();
+    move();
+    buildsecondTower();
+    turnLeft();
+    turnLeft();
+    move();
+    move();
+    move();
+    turnRight();
+}
+
+function turnRight() {
+    turnLeft();
+    turnLeft();
+    turnLeft();
+}
+
+function buildTower() {
+    turnLeft();
+    putBall();
+    move();
+    putBall();
+    move();
+    putBall();
+    move();
+    turnRight();
+}
+
+function buildsecondTower() {
+    turnRight();
+    move();
+    putBall();
+    move();
+    putBall();
+    move();
+    putBall();
+}
