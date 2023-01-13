@@ -1,0 +1,72 @@
+function turnRight() {
+    turnLeft();
+    turnLeft();
+    turnLeft();
+}
+
+function turnAround() {
+    turnLeft();
+    turnLeft();
+}
+
+function makeLeftSide() {
+    putBall();
+    move();
+    turnLeft();
+    move();
+    turnRight();
+    putBall();
+    move();
+    turnLeft();
+    move();
+    turnRight();
+    putBall();
+    move();
+    turnLeft();
+    move();
+    turnRight();
+
+}
+
+function makeRightSide() {
+    putBall();
+    turnRight();
+    move();
+    turnLeft();
+    move();
+    putBall();
+    turnRight();
+    move();
+    turnLeft();
+    move();
+    putBall();
+    turnRight();
+    move();
+    turnLeft();
+    move();
+    putBall();
+    turnLeft();
+    turnLeft();
+    move();
+    move();
+    move();
+    move();
+    move();
+    move();
+    turnAround();
+
+}
+makeLeftSide();
+makeRightSide();
+
+function goHome() {
+    turnAround();
+    move();
+    move();
+    move();
+    move();
+    move();
+    move();
+    turnAround();
+
+}
