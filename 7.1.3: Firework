@@ -1,0 +1,121 @@
+function start() {
+    center();
+    hLine();
+    center();
+    hLine2();
+    center();
+    vLine();
+    center();
+    vLine2();
+    center();
+    fPlane();
+    center();
+    sPlane();
+    center();
+    tPlane();
+    center();
+    ftPlane();
+    center();
+    putBall();
+}
+
+function ftPlane() {
+    for (var i = 0; i < 4; i++) {
+        move();
+        turnRight();
+        move();
+        putBall();
+        turnLeft();
+    }
+}
+
+function tPlane() {
+    turnAround();
+    for (var i = 0; i < 4; i++) {
+        move();
+        turnLeft();
+        move();
+        putBall();
+        turnRight();
+    }
+}
+
+function sPlane() {
+    turnAround();
+    for (var i = 0; i < 4; i++) {
+        move();
+        turnRight();
+        move();
+        putBall();
+        turnLeft();
+    }
+}
+
+function fPlane() {
+    for (var i = 0; i < 4; i++) {
+        move();
+        turnLeft();
+        move();
+        putBall();
+        turnRight();
+    }
+}
+
+function hLine() {
+    for (var i = 0; i < 4; i++) {
+        move();
+        putBall();
+    }
+}
+
+function hLine2() {
+    turnAround();
+    for (var i = 0; i < 4; i++) {
+        move();
+        putBall();
+    }
+}
+
+function vLine() {
+    turnLeft();
+    for (var i = 0; i < 4; i++) {
+        move();
+        putBall();
+    }
+}
+
+function vLine2() {
+    turnRight();
+    for (var i = 0; i < 4; i++) {
+        move();
+        putBall();
+    }
+}
+
+function center() {
+    while (notFacingWest()) {
+        turnLeft();
+    }
+    while (frontIsClear()) {
+        move();
+    }
+    while (notFacingSouth()) {
+        turnLeft();
+    }
+    while (frontIsClear()) {
+        move();
+    }
+    while (notFacingEast()) {
+        turnLeft();
+    }
+    dash();
+    turnLeft();
+    dash();
+    turnRight();
+}
+
+function dash() {
+    for (var i = 0; i < 4; i++) {
+        move();
+    }
+}
