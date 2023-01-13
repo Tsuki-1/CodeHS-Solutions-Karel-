@@ -1,0 +1,13 @@
+function start() {
+    if (facingEast()) {
+        move();
+        takeBall();
+        turnAround();
+    }
+
+    if (ballsPresent()) {
+        takeBall();
+    }
+    turnAround();
+
+}
