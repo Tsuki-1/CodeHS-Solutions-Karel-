@@ -1,0 +1,10 @@
+function start() {
+    if (noBallsPresent()) {
+        putBall();
+        move();
+    }
+    if (ballsPresent()) {
+        move();
+    }
+
+}
